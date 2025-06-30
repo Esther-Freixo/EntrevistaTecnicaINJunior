@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const a = prompt("Digite o valor da variável a: ");
+        const b = prompt("Digite o valor da variável b: ");
+        const c = prompt("Digite o valor da variável c: ");
+
+        let discriminante = b * b - (4 * a * c);
+
+        if (discriminante == 0) {
+            const x = (-b + Math.sqrt(discriminante)) / (2 * a);
+
+            console.log(`O valor da a única raiz real é ${x}`);
+        }
+        else if (discriminante > 0) {
+            const x1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+            const x2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+
+            console.log(`O valor das raízes são: x1 = ${x1} e x2 = ${x2}`);
+        } else {
+            console.log("A Equação não possui raizes reais")
+        }
+
+    </script>
+
+</body>
+
+</html>
